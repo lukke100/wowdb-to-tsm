@@ -32,3 +32,15 @@ fi
 ./rip-single-url.py '/items/armor/plate?filter-quality=8'    'output/armor-plate-rare.txt'
 ./rip-single-url.py '/items/armor/plate?filter-quality=16'   'output/armor-plate-epic.txt'
 ./rip-single-url.py '/items/armor/plate?filter-quality=32'   'output/armor-plate-legendary.txt'
+
+# Crafting Recipes
+./rip-single-url.py '/items/recipes/alchemy'                 'output/recipes-alchemy.txt'
+./rip-single-url.py '/items/recipes/blacksmithing'           'output/recipes-blacksmithing.txt'
+./rip-single-url.py '/items/recipes/cooking'                 'output/recipes-cooking.txt'
+./rip-single-url.py '/items/recipes/enchanting'              'output/recipes-enchanting.txt'
+./rip-single-url.py '/items/recipes/engineering'             'output/recipes-engineering.txt'
+./rip-single-url.py '/items/recipes/first-aid'               'output/recipes-first-aid.txt'
+./rip-single-url.py '/items/recipes/inscription'             'output/recipes-inscription.txt'
+./rip-single-url.py '/items/recipes/jewelcrafting'           'output/recipes-jewelcrafting.txt'
+./rip-single-url.py '/items/recipes/leatherworking'          'output/recipes-leatherworking.txt'
+./rip-single-url.py '/items/recipes/tailoring'               'output/recipes-tailoring.txt'
