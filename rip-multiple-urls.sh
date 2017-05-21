@@ -33,6 +33,18 @@ fi
 ./rip-single-url.py '/items/armor/plate?filter-quality=16'   'output/armor-plate-epic.txt'
 ./rip-single-url.py '/items/armor/plate?filter-quality=32'   'output/armor-plate-legendary.txt'
 
+# Cloaks by Rarity
+./rip-single-url.py '/items/armor/cloaks?filter-quality=4'    'output/armor-cloaks-uncommon.txt'
+./rip-single-url.py '/items/armor/cloaks?filter-quality=8'    'output/armor-cloaks-rare.txt'
+./rip-single-url.py '/items/armor/cloaks?filter-quality=16'   'output/armor-cloaks-epic.txt'
+./rip-single-url.py '/items/armor/cloaks?filter-quality=32'   'output/armor-cloaks-legendary.txt'
+
+# Shirts by Rarity
+./rip-single-url.py '/items/armor/shirts?filter-quality=4'    'output/armor-shirts-uncommon.txt'
+./rip-single-url.py '/items/armor/shirts?filter-quality=8'    'output/armor-shirts-rare.txt'
+./rip-single-url.py '/items/armor/shirts?filter-quality=16'   'output/armor-shirts-epic.txt'
+./rip-single-url.py '/items/armor/shirts?filter-quality=32'   'output/armor-shirts-legendary.txt'
+
 # Crafting Recipes
 ./rip-single-url.py '/items/recipes/alchemy'                 'output/recipes-alchemy.txt'
 ./rip-single-url.py '/items/recipes/blacksmithing'           'output/recipes-blacksmithing.txt'
