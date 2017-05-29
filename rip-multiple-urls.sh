@@ -45,6 +45,12 @@ fi
 ./rip-single-url.py '/items/armor/shirts?filter-quality=16'   'output/armor-shirts-epic.txt'
 ./rip-single-url.py '/items/armor/shirts?filter-quality=32'   'output/armor-shirts-legendary.txt'
 
+# Shields by Rarity
+./rip-single-url.py '/items/armor/shields?filter-quality=4'   'output/armor-shields-uncommon.txt'
+./rip-single-url.py '/items/armor/shields?filter-quality=8'   'output/armor-shields-rare.txt'
+./rip-single-url.py '/items/armor/shields?filter-quality=16'  'output/armor-shields-epic.txt'
+./rip-single-url.py '/items/armor/shields?filter-quality=32'  'output/armor-shields-legendary.txt'
+
 # Crafting Recipes
 ./rip-single-url.py '/items/recipes/alchemy'                 'output/recipes-alchemy.txt'
 ./rip-single-url.py '/items/recipes/blacksmithing'           'output/recipes-blacksmithing.txt'
