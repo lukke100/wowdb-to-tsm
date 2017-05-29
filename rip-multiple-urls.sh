@@ -19,7 +19,7 @@ DIR_OUTPUT="output/"
 
 # Armor
 # =====
-DIR_ARMOR="$DIR_OUTPUT/armor/"
+DIR_ARMOR="$DIR_OUTPUT/Armor/"
 
 rip_qual '/items/armor/cloth'   "$DIR_ARMOR/Cloth Armor/"
 rip_qual '/items/armor/leather' "$DIR_ARMOR/Leather Armor/"
@@ -32,7 +32,7 @@ rip_qual '/items/armor/shields' "$DIR_ARMOR/Shields/"
 
 # Weapons
 # =======
-DIR_WEAPONS="$DIR_OUTPUT/weapons/"
+DIR_WEAPONS="$DIR_OUTPUT/Weapons/"
 
 rip_qual '/items/weapons/crossbows'         "$DIR_WEAPONS/Crossbows/"
 rip_qual '/items/weapons/guns'              "$DIR_WEAPONS/Guns/"
@@ -54,7 +54,7 @@ rip_qual '/items/weapons/warglaives'        "$DIR_WEAPONS/Warglaives/"
 
 # Crafting Recipes
 # ================
-DIR_RECIPES="$DIR_OUTPUT/recipes/"
+DIR_RECIPES="$DIR_OUTPUT/Recipes/"
 mkdir -p "$DIR_RECIPES/"
 
 ./rip-single-url.py '/items/recipes/alchemy'        "$DIR_RECIPES/alchemy.txt"
