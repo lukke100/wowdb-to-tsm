@@ -30,6 +30,28 @@ rip_qual '/items/armor/shirts'  "$DIR_ARMOR/Shirts/"
 rip_qual '/items/armor/shields' "$DIR_ARMOR/Shields/"
 
 
+# Weapons
+# =======
+DIR_WEAPONS="$DIR_OUTPUT/weapons/"
+
+rip_qual '/items/weapons/crossbows'         "$DIR_WEAPONS/Crossbows/"
+rip_qual '/items/weapons/guns'              "$DIR_WEAPONS/Guns/"
+rip_qual '/items/weapons/wands'             "$DIR_WEAPONS/Wands/"
+rip_qual '/items/weapons/bows'              "$DIR_WEAPONS/Bows/"
+rip_qual '/items/weapons/daggers'           "$DIR_WEAPONS/Daggers/"
+rip_qual '/items/weapons/fishing-poles'     "$DIR_WEAPONS/Fishing Poles/"
+rip_qual '/items/weapons/fist-weapons'      "$DIR_WEAPONS/Fist Weapons/"
+rip_qual '/items/weapons/one-handed-axes'   "$DIR_WEAPONS/One-Handed Axes/"
+rip_qual '/items/weapons/one-handed-maces'  "$DIR_WEAPONS/One-Handed Maces/"
+rip_qual '/items/weapons/one-handed-swords' "$DIR_WEAPONS/One-Handed Swords/"
+rip_qual '/items/weapons/polearms'          "$DIR_WEAPONS/Polearms/"
+rip_qual '/items/weapons/staves'            "$DIR_WEAPONS/Staves/"
+rip_qual '/items/weapons/two-handed-axes'   "$DIR_WEAPONS/Two-Handed Axes/"
+rip_qual '/items/weapons/two-handed-maces'  "$DIR_WEAPONS/Two-Handed Maces/"
+rip_qual '/items/weapons/two-handed-swords' "$DIR_WEAPONS/Two-Handed Swords/"
+rip_qual '/items/weapons/warglaives'        "$DIR_WEAPONS/Warglaives/"
+
+
 # Crafting Recipes
 # ================
 DIR_RECIPES="$DIR_OUTPUT/recipes/"
