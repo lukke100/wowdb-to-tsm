@@ -21,13 +21,13 @@ DIR_OUTPUT="output/"
 # =====
 DIR_ARMOR="$DIR_OUTPUT/Armor/"
 
+rip_qual '/items/armor/cloaks'  "$DIR_ARMOR/Cloaks/"
 rip_qual '/items/armor/cloth'   "$DIR_ARMOR/Cloth Armor/"
 rip_qual '/items/armor/leather' "$DIR_ARMOR/Leather Armor/"
 rip_qual '/items/armor/mail'    "$DIR_ARMOR/Mail Armor/"
 rip_qual '/items/armor/plate'   "$DIR_ARMOR/Plate Armor/"
-rip_qual '/items/armor/cloaks'  "$DIR_ARMOR/Cloaks/"
-rip_qual '/items/armor/shirts'  "$DIR_ARMOR/Shirts/"
 rip_qual '/items/armor/shields' "$DIR_ARMOR/Shields/"
+rip_qual '/items/armor/shirts'  "$DIR_ARMOR/Shirts/"
 
 
 # Weapons
