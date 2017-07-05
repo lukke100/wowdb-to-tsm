@@ -3,14 +3,11 @@ set -euo pipefail
 IFS=$(printf '\n\t')
 
 # NOTE: This function fails when "$1" contains a query string.
-rip_qual()
+rip_boe()
 {
-  mkdir -p "$2"
+  mkdir -p "$(dirname "$2")"
 
-  ./rip-single-url.py "$1?filter-quality=4"  "$2/Uncommon.txt"
-  ./rip-single-url.py "$1?filter-quality=8"  "$2/Rare.txt"
-  ./rip-single-url.py "$1?filter-quality=16" "$2/Epic.txt"
-  ./rip-single-url.py "$1?filter-quality=32" "$2/Legendary.txt"
+  ./rip-single-url.py "$1?filter-bind=2" "$2"
 }
 
 
@@ -21,35 +18,38 @@ DIR_OUTPUT="output/"
 # =====
 DIR_ARMOR="$DIR_OUTPUT/Armor/"
 
-rip_qual '/items/armor/cloaks'  "$DIR_ARMOR/Cloaks/"
-rip_qual '/items/armor/cloth'   "$DIR_ARMOR/Cloth Armor/"
-rip_qual '/items/armor/leather' "$DIR_ARMOR/Leather Armor/"
-rip_qual '/items/armor/mail'    "$DIR_ARMOR/Mail Armor/"
-rip_qual '/items/armor/plate'   "$DIR_ARMOR/Plate Armor/"
-rip_qual '/items/armor/shields' "$DIR_ARMOR/Shields/"
-rip_qual '/items/armor/shirts'  "$DIR_ARMOR/Shirts/"
+rip_boe '/items/armor/cloaks'    "$DIR_ARMOR/Cloaks.txt"
+rip_boe '/items/armor/cloth'     "$DIR_ARMOR/Cloth Armor.txt"
+rip_boe '/items/armor/leather'   "$DIR_ARMOR/Leather Armor.txt"
+rip_boe '/items/armor/mail'      "$DIR_ARMOR/Mail Armor.txt"
+rip_boe '/items/armor/necklaces' "$DIR_ARMOR/Necklaces.txt"
+rip_boe '/items/armor/plate'     "$DIR_ARMOR/Plate Armor.txt"
+rip_boe '/items/armor/rings'     "$DIR_ARMOR/Rings.txt"
+rip_boe '/items/armor/shields'   "$DIR_ARMOR/Shields.txt"
+rip_boe '/items/armor/shirts'    "$DIR_ARMOR/Shirts.txt"
+rip_boe '/items/armor/trinkets'  "$DIR_ARMOR/Trinkets.txt"
 
 
 # Weapons
 # =======
 DIR_WEAPONS="$DIR_OUTPUT/Weapons/"
 
-rip_qual '/items/weapons/crossbows'         "$DIR_WEAPONS/Crossbows/"
-rip_qual '/items/weapons/guns'              "$DIR_WEAPONS/Guns/"
-rip_qual '/items/weapons/wands'             "$DIR_WEAPONS/Wands/"
-rip_qual '/items/weapons/bows'              "$DIR_WEAPONS/Bows/"
-rip_qual '/items/weapons/daggers'           "$DIR_WEAPONS/Daggers/"
-rip_qual '/items/weapons/fishing-poles'     "$DIR_WEAPONS/Fishing Poles/"
-rip_qual '/items/weapons/fist-weapons'      "$DIR_WEAPONS/Fist Weapons/"
-rip_qual '/items/weapons/one-handed-axes'   "$DIR_WEAPONS/One-Handed Axes/"
-rip_qual '/items/weapons/one-handed-maces'  "$DIR_WEAPONS/One-Handed Maces/"
-rip_qual '/items/weapons/one-handed-swords' "$DIR_WEAPONS/One-Handed Swords/"
-rip_qual '/items/weapons/polearms'          "$DIR_WEAPONS/Polearms/"
-rip_qual '/items/weapons/staves'            "$DIR_WEAPONS/Staves/"
-rip_qual '/items/weapons/two-handed-axes'   "$DIR_WEAPONS/Two-Handed Axes/"
-rip_qual '/items/weapons/two-handed-maces'  "$DIR_WEAPONS/Two-Handed Maces/"
-rip_qual '/items/weapons/two-handed-swords' "$DIR_WEAPONS/Two-Handed Swords/"
-rip_qual '/items/weapons/warglaives'        "$DIR_WEAPONS/Warglaives/"
+rip_boe '/items/weapons/crossbows'         "$DIR_WEAPONS/Crossbows.txt"
+rip_boe '/items/weapons/guns'              "$DIR_WEAPONS/Guns.txt"
+rip_boe '/items/weapons/wands'             "$DIR_WEAPONS/Wands.txt"
+rip_boe '/items/weapons/bows'              "$DIR_WEAPONS/Bows.txt"
+rip_boe '/items/weapons/daggers'           "$DIR_WEAPONS/Daggers.txt"
+rip_boe '/items/weapons/fishing-poles'     "$DIR_WEAPONS/Fishing Poles.txt"
+rip_boe '/items/weapons/fist-weapons'      "$DIR_WEAPONS/Fist Weapons.txt"
+rip_boe '/items/weapons/one-handed-axes'   "$DIR_WEAPONS/One-Handed Axes.txt"
+rip_boe '/items/weapons/one-handed-maces'  "$DIR_WEAPONS/One-Handed Maces.txt"
+rip_boe '/items/weapons/one-handed-swords' "$DIR_WEAPONS/One-Handed Swords.txt"
+rip_boe '/items/weapons/polearms'          "$DIR_WEAPONS/Polearms.txt"
+rip_boe '/items/weapons/staves'            "$DIR_WEAPONS/Staves.txt"
+rip_boe '/items/weapons/two-handed-axes'   "$DIR_WEAPONS/Two-Handed Axes.txt"
+rip_boe '/items/weapons/two-handed-maces'  "$DIR_WEAPONS/Two-Handed Maces.txt"
+rip_boe '/items/weapons/two-handed-swords' "$DIR_WEAPONS/Two-Handed Swords.txt"
+rip_boe '/items/weapons/warglaives'        "$DIR_WEAPONS/Warglaives.txt"
 
 
 # Crafting Recipes
